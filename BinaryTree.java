@@ -299,8 +299,8 @@ public class BinaryTree {
             count = 1;
         }
 
-        sum += nodesGTHelper(node.left, val); // Increment and count nodes in left tree
-        sum += nodesGTHelper(node.right, val); // Increment and count nodes in right tree
+        count += nodesGTHelper(node.left, val); // Increment and count nodes in left tree
+        count += nodesGTHelper(node.right, val); // Increment and count nodes in right tree
 
 
         return count; // Return count
